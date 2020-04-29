@@ -96,10 +96,10 @@ class Device(object):
 		return None not in (self.adid, self.uuid, self.phone_id, self.device_id)
 
 	def write_ini(self, filename):
-		print("; Madara's Instagram Turbo", file=open(filename, "w"))
-		print("; Information used for device identification\r\n", file=open(filename, "a"))
-		print("[Device]\r\nadid={}\r\nuuid={}".format(self.adid, self.uuid), file=open(filename, "a"))
-		print("phoneid={}\r\ndeviceid={}".format(self.phone_id, self.device_id), file=open(filename, "a"))
+	print("; Madara's Instagram Turbo", file=open(filename, "w"))
+	print("; Information used for device identification\r\n", file=open(filename, "a"))
+	print("[Device]\r\nadid={}\r\nuuid={}".format(self.adid, self.uuid), file=open(filename, "a"))
+	print("phoneid={}\r\ndeviceid={}".format(self.phone_id, self.device_id), file=open(filename, "a"))
 
 class InstagramAPI:
     API_URL = 'https://i.instagram.com/api/v1/'
